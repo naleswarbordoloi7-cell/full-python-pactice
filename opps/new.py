@@ -17,3 +17,16 @@ print(nale.admition_no)
 print(nale.get_cgpa())
 nale.set_cgpa(8.9)
 print(nale.get_cgpa())
+
+
+
+#  find the largest element in array
+def largest(arr):
+    largest = arr[0]
+    for num in arr:
+        if num >largest:
+            largest = num
+    return largest
+ 
+#  time complexity O(n)
+# space complexity O(1)

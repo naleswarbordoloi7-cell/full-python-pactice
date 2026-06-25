@@ -115,3 +115,14 @@ arr_2 =[x*2 for x in range(1,5)]
 print(arr_2)
 arr_3=list(range(1,8))
 print(arr_3)
+
+# shorted an array
+arr =[64,25,12,22,11]
+for i in range(len(arr)):
+    min_index = i
+    for j in range(i+1,len(arr)):
+        if arr[j] < arr[min_index]:
+            min_index = j
+    arr[i], arr[min_index] = arr[min_index], arr[i]
+print("sorted array:",arr)
+
